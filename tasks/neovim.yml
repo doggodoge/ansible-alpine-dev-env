@@ -1,0 +1,10 @@
+- name: Ensure neovim config path exists
+  file:
+    path: "{{ lookup('env', 'HOME') }}/.config/nvim"
+    state: directory
+
+- name: Add neovim config
+  copy:
+    src: ../templates/init.vim
+    dest: "{{ lookup('env', 'HOME') }}/.config/nvim/init.vim"
+

@@ -1,0 +1,15 @@
+---
+
+- name: Install Development Tools
+  apk:
+    name:
+      - clang
+      - llvm
+      - lld
+      - lldb
+      - cmake
+      - ninja
+      - python3
+      - nodejs
+    state: installed
+

@@ -1,0 +1,8 @@
+- name: Install Productivity Tools
+  apk:
+    name:
+      - neovim
+      - htop
+      - fish
+    state: installed
+

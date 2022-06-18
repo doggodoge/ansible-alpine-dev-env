@@ -1,0 +1,8 @@
+- name: Install Essentials
+  apk:
+    name:
+      - build-base
+      - git
+      - exa
+    state: installed
+
